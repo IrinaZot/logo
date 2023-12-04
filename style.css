@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+  }
+  .zi {
+    width: 300px;
+    height: 300px;
+    color: white;
+    position: relative;
+    transition: transform 500ms;
+  }
+  
+  .zi:hover {
+    transform: rotate(55deg) scale(0.5);
+    .point {
+      left: calc(20% + 180px);
+      top: calc(30% + 40px);
+      color: rgb(118, 116, 116);
+      box-shadow: -35px +50px 0px 20px white,
+        -400px -5px 0px 1px rgb(113, 75, 160),
+        -350px -40px 0px 20px white;
+      }
+    .bottom {
+      border-color: rgb(113, 75, 160);
+      box-shadow: none;
+      }
+    .i {
+      border-color: black;
+      background-color: black;
+       }
+    .top{
+      border-color: rgb(118, 116, 116);
+      box-shadow: none;
+  
+    }
+  }
+  
+  .thickpart {
+    position: absolute;
+    background-color: black;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 8px;
+    top: 0;
+    left: calc(10% - 10px);
+    width: 70px;
+    transform: skew(-35deg);
+    height: 300px;
+    z-index: 2;
+    box-shadow: 5px 5px 10px rgb(220, 192, 192)
+  }
+  .top,
+  .bottom {
+    position: absolute;
+    width: 156px;
+    border-style: solid;
+    border-width: 9px;
+    transform: skew(-30deg);
+    height: 0;
+    background-color: currentColor;
+    box-shadow: 5px 5px 10px rgb(220, 192, 192)
+  }
+  
+  .top {
+    top: 0;
+    left: calc(10% - 60px);
+  }
+  .bottom {
+    bottom: 0;
+    left: calc(15% - 66px);
+  }
+  
+  .i {
+    position: absolute;
+    width: 0px;
+    border-style: solid;
+    border-width: 9px;
+    transform: skew(-30deg);
+    height: 100px;
+    background-color: currentColor;
+    left: calc(50% + 50px);
+    top: calc(50% + 10px);
+  }
+  
+  .point {
+    position: absolute;
+    width: 0px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 9px;
+    transform: skew(-30deg);
+    height: 20px;
+    background-color: currentColor;
+    left: calc(50% + 101px);
+    top: calc(50% - 40px);
+    box-shadow: 5px 5px 10px rgb(220, 192, 192);
+  }
+  
